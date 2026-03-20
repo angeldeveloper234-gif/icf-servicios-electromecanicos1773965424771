@@ -5,37 +5,49 @@ export function Stats() {
     const { stats } = config.dynamicContent;
 
     const data = [
-        { label: "Proyectos Terminados", value: `${stats.projectsDone}`, suffix: "+" },
-        { label: "Años de Trayectoria", value: `${stats.experienceYears}`, suffix: "" },
-        { label: "Clientes Satisfechos", value: `${stats.happyClients}`, suffix: "+" },
+        { label: "Métricas de Éxito", value: `${stats.projectsDone}`, suffix: "+", sub: "Proyectos Instalados" },
+        { label: "Experiencia de Campo", value: `${stats.experienceYears}`, suffix: "", sub: "Años de Trayectoria" },
+        { label: "Índice de Confianza", value: `${stats.happyClients}`, suffix: "+", sub: "Clientes Operativos" },
     ];
 
     return (
-        <section className="py-24 bg-[#111010] border-y border-white/5 relative overflow-hidden">
-            {/* Subtle orange glow */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[200px] bg-[#E07B2A]/5 blur-[80px] rounded-full pointer-events-none" />
+        <section className="py-32 bg-[#0A0A0B] border-y border-white/5 relative overflow-hidden">
+            {/* Background Data Patterns */}
+            <div className="absolute inset-0 opacity-[0.02] pointer-events-none font-mono text-[8px] flex flex-wrap gap-4 overflow-hidden leading-none">
+                {Array.from({ length: 100 }).map((_, i) => (
+                    <span key={i}>ID_{Math.random().toString(36).substr(2, 9).toUpperCase()} STATUS_OK 200_EXEC</span>
+                ))}
+            </div>
 
-            <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="container mx-auto px-6 relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
                     {data.map((item, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.15, duration: 0.8 }}
-                            className="text-center md:text-left border-l-4 border-[#E07B2A]/30 pl-8 hover:border-[#E07B2A] transition-colors duration-500"
+                            transition={{ delay: index * 0.1, duration: 0.8 }}
+                            className="group"
                         >
-                            <p className="text-zinc-500 font-sans text-xs tracking-[0.3em] uppercase mb-3 font-bold">
-                                {item.label}
-                            </p>
-                            <div className="flex items-end gap-1">
-                                <span className="text-6xl md:text-8xl font-display font-bold tabular-nums tracking-tight text-white">
-                                    {item.value}
-                                </span>
-                                <span className="text-4xl md:text-5xl font-display font-bold text-[#E07B2A] mb-2">
-                                    {item.suffix}
-                                </span>
+                            <div className="flex flex-col gap-6">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-1 h-8 bg-[#2563EB]/40 group-hover:bg-[#2563EB] transition-all duration-500" />
+                                    <span className="text-zinc-500 font-mono text-[10px] tracking-[0.4em] uppercase font-black">
+                                        {item.label}
+                                    </span>
+                                </div>
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-7xl md:text-9xl font-display font-black tracking-tighter text-white tabular-nums group-hover:text-blue-500/10 transition-colors duration-700">
+                                        {item.value}
+                                    </span>
+                                    <span className="text-4xl md:text-5xl font-display font-black text-[#2563EB]">
+                                        {item.suffix}
+                                    </span>
+                                </div>
+                                <p className="text-zinc-400 font-sans text-xl font-light italic tracking-tight">
+                                    {item.sub}
+                                </p>
                             </div>
                         </motion.div>
                     ))}

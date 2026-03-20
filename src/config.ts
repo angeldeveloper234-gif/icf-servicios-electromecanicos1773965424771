@@ -168,21 +168,21 @@ export const config: Config = {
             id: "P1",
             name: "Unidad Condensadora 5HP",
             price: "$12,500",
-            image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop",
             desc: "Compresor semi-hermético de alta eficiencia para cámaras de conservación."
         },
         {
             id: "P2",
             name: "Evaporador Industrial",
             price: "$8,900",
-            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
             desc: "Doble flujo de aire con deshielo eléctrico, ideal para naves comerciales."
         },
         {
             id: "P3",
             name: "Kit de Control Digital",
             price: "$3,200",
-            image: "https://images.unsplash.com/photo-1555664424-778a69022365?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
             desc: "Sistema de monitoreo remoto para tableros de refrigeración con alerta móvil."
         }
     ],
@@ -208,19 +208,19 @@ export const config: Config = {
     ],
     gallery: [
         {
-            title: "Mantenimiento Chiller",
-            category: "Industrial",
-            image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop"
+            title: "Mantenimiento Chiller Industrial",
+            category: "Climatización",
+            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1200",
         },
         {
-            title: "Instalación VRF",
-            category: "Comercial",
-            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+            title: "Instalación HVAC Comercial",
+            category: "Refrigeración",
+            image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200",
         },
         {
-            title: "Tableros de Control",
+            title: "Sistemas de Control Eléctrico",
             category: "Electromecánica",
-            image: "https://images.unsplash.com/photo-1555664424-778a69022365?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1596491100557-ca177114ff4c?q=80&w=1200",
         }
     ],
     features: {
