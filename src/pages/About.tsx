@@ -29,10 +29,10 @@ export function About() {
                                 Perfil Corporativo
                             </motion.p>
                             <motion.h1 
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8 }}
-                                className="text-7xl md:text-9xl lg:text-[10rem] font-display text-white leading-[0.85] tracking-tighter"
+                                 initial={{ opacity: 0, y: 30 }}
+                                 animate={{ opacity: 1, y: 0 }}
+                                 transition={{ duration: 0.8 }}
+                                 className="text-5xl md:text-7xl lg:text-8xl font-display text-white leading-[0.9] tracking-tighter"
                             >
                                 INGENIERÍA DE <br />
                                 <span className="text-blue-600">PRECISIÓN</span>

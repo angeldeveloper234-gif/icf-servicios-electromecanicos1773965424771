@@ -30,7 +30,7 @@ export function CTA() {
                         <span className="text-[#2563EB] font-mono text-xs tracking-widest uppercase font-bold">Respuesta Inmediata</span>
                     </motion.div>
 
-                    <h2 className="text-5xl md:text-8xl font-display mb-12 leading-[1] tracking-tighter uppercase">
+                    <h2 className="text-4xl md:text-7xl font-display mb-12 leading-[1] tracking-tighter uppercase">
                         ¿LISTO PARA UN TRABAJO<br />
                         <span className="text-zinc-500">BIEN HECHO?</span>
                     </h2>

@@ -28,7 +28,7 @@ export function Gallery() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-6xl md:text-8xl font-display text-white leading-[0.85] tracking-tighter"
+                            className="text-4xl md:text-6xl font-display text-white leading-[0.9] tracking-tighter"
                         >
                             REGISTRO DE <span className="text-blue-600 block md:inline">ALTO RENDIMIENTO</span>
                         </motion.h2>

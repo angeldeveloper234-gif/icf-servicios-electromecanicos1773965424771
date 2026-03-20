@@ -22,7 +22,7 @@ export function Services() {
                                 Capacidades Técnicas
                             </span>
                         </div>
-                        <h2 className="text-5xl md:text-7xl font-display text-white tracking-tighter leading-none mb-0">
+                        <h2 className="text-4xl md:text-6xl font-display text-white tracking-tighter leading-none mb-0">
                             ÁREAS DE <span className="text-[#2563EB] text-glow">ESPECIALIZACIÓN</span>
                         </h2>
                     </div>

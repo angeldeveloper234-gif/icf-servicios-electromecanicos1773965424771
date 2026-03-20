@@ -38,10 +38,10 @@ export function Stats() {
                                     </span>
                                 </div>
                                 <div className="flex items-baseline gap-2">
-                                    <span className="text-7xl md:text-9xl font-display font-black tracking-tighter text-white tabular-nums group-hover:text-blue-500/10 transition-colors duration-700">
+                                    <span className="text-6xl md:text-8xl font-display font-black tracking-tighter text-white tabular-nums group-hover:text-blue-500/10 transition-colors duration-700">
                                         {item.value}
                                     </span>
-                                    <span className="text-4xl md:text-5xl font-display font-black text-[#2563EB]">
+                                    <span className="text-3xl md:text-4xl font-display font-black text-[#2563EB]">
                                         {item.suffix}
                                     </span>
                                 </div>

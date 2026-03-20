@@ -59,8 +59,8 @@ export function Hero({ dynamic_city, pain_point_headline }: HeroProps) {
                             </span>
                         </div>
 
-                        <h1 className="font-display text-7xl md:text-9xl lg:text-[11rem] leading-[0.8] mb-12 text-white tracking-tighter">
-                            <span className="block text-blue-600 text-3xl md:text-5xl mb-8 tracking-[0.2em] font-mono font-black opacity-90">
+                        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-12 text-white tracking-tighter">
+                            <span className="block text-blue-600 text-lg md:text-2xl mb-6 tracking-[0.2em] font-mono font-black opacity-90">
                                 {specialization.title}
                             </span>
                             <div className="relative">
