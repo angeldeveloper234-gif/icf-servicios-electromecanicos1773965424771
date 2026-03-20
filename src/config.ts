@@ -9,7 +9,9 @@ export interface ServiceItem {
     icon: string;
     title: string;
     problem: string;
+    agitation: string;
     solve: string;
+    price: string;
 }
 
 export interface TestimonialItem {
@@ -17,6 +19,14 @@ export interface TestimonialItem {
     role: string;
     text: string;
     rating: number;
+}
+
+export interface ProductItem {
+    id: string;
+    name: string;
+    price: string;
+    image: string;
+    desc: string;
 }
 
 export interface Config {
@@ -32,9 +42,17 @@ export interface Config {
         address: string;
         map_link: string;
     };
+    demoUser: {
+        whatsapp: string;
+    };
     dynamicContent: {
         city: string;
         localAnchor: string;
+        pricing: {
+            basic: string;
+            comprehensive: string;
+            retainer: string;
+        };
         stats: {
             projectsDone: number;
             experienceYears: number;
@@ -53,6 +71,7 @@ export interface Config {
         }>;
     };
     services: ServiceItem[];
+    products: ProductItem[];
     testimonials: TestimonialItem[];
     gallery: GalleryItem[];
     features: {
@@ -75,9 +94,17 @@ export const config: Config = {
         address: "San Román 320, Santa Monica Sect 13, 67286 Monterrey, N.L.",
         map_link: "https://www.google.com/maps/search/?api=1&query=San+Román+320+Santa+Monica+Sect+13+Monterrey+67286"
     },
+    demoUser: {
+        whatsapp: "+528126014586"
+    },
     dynamicContent: {
         city: "Monterrey, N.L.",
         localAnchor: "Zona Metropolitana",
+        pricing: {
+            basic: "Desde $1,200 MXN",
+            comprehensive: "Desde $3,500 MXN",
+            retainer: "Bajo presupuesto"
+        },
         stats: {
             projectsDone: 850,
             experienceYears: 12,
@@ -113,21 +140,50 @@ export const config: Config = {
             icon: "❄️",
             title: "HVAC Industrial",
             problem: "Ineficiencia térmica en plantas",
-            solve: "Mantenimiento preventivo y correctivo a chillers y unidades paquete."
+            agitation: "El calor excesivo detiene la producción y daña maquinaria costosa.",
+            solve: "Mantenimiento preventivo y correctivo a chillers y unidades paquete.",
+            price: "pricing.comprehensive"
         },
         {
             id: "02",
             icon: "🏭",
             title: "Refrigeración Comercial",
             problem: "Pérdida de cadena de frío",
-            solve: "Reparación urgente de cámaras frías y vitrinas comerciales."
+            agitation: "Fallas de refrigeración en el peor momento ponen en riesgo su inventario y cumplimiento sanitario.",
+            solve: "Reparación urgente de cámaras frías y vitrinas comerciales.",
+            price: "pricing.basic"
         },
         {
             id: "03",
             icon: "⚡",
             title: "Mantenimiento Electromecánico",
             problem: "Paros no programados",
-            solve: "Servicio integral a motores, bombas y tableros de control."
+            agitation: "Componentes desgastados causan fallas eléctricas que pueden incendiar tableros.",
+            solve: "Servicio integral a motores, bombas y tableros de control.",
+            price: "pricing.retainer"
+        }
+    ],
+    products: [
+        {
+            id: "P1",
+            name: "Unidad Condensadora 5HP",
+            price: "$12,500",
+            image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop",
+            desc: "Compresor semi-hermético de alta eficiencia para cámaras de conservación."
+        },
+        {
+            id: "P2",
+            name: "Evaporador Industrial",
+            price: "$8,900",
+            image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+            desc: "Doble flujo de aire con deshielo eléctrico, ideal para naves comerciales."
+        },
+        {
+            id: "P3",
+            name: "Kit de Control Digital",
+            price: "$3,200",
+            image: "https://images.unsplash.com/photo-1555664424-778a69022365?q=80&w=800&auto=format&fit=crop",
+            desc: "Sistema de monitoreo remoto para tableros de refrigeración con alerta móvil."
         }
     ],
     testimonials: [
